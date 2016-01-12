@@ -1,0 +1,89 @@
+//Useful mixins
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+//TODO Remove from project, but save because this is cool
+@mixin iOS-blur-effect($ammount : 20px, $opacity : 0.4) {
+    -webkit-filter: blur($ammount);
+    -moz-filter: blur($ammount);
+    -o-filter: blur($ammount);
+    -ms-filter: blur($ammount);
+    filter: blur($ammount);
+    opacity: $opacity;
+}
+
+//Fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+
+//All SASS imported from this file
+$primary-color:        #607D8B;
+$dark-primary-color:   #455A64;
+$light-primary-color:  #CFD8DC;
+$accent-color:         #8BC34A;
+$primary-text-color:   #212121;
+$secondary-text-color: #727272;
+$divider-color:        #B6B6B6;
+
+html {
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.in-your-face {
+    $padding: 20px;
+
+    width: 80%;
+    height: 60%;
+    padding: $padding;
+
+    background: black; //DEBUG
+
+    margin: auto;
+    @include vertical-align();
+
+    .header {
+        margin: auto;
+        width: 60%;
+        height: 30%;
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+            @include vertical-align();
+
+            text-align: center;
+            color: white;
+            font-family: 'Lato', sans-serif;
+        }
+
+        h1 {
+            font-weight: normal;
+        }
+
+        h2 {
+            font-weight: 300;
+        }
+    }
+
+    .menu {
+        background: red; //DEBUG
+        margin: auto;
+        margin-top: $padding;
+
+        width: 80%;
+        height: 60%;
+
+        i {
+            font-size: 46px;
+            color: white;
+        }
+    }
+}

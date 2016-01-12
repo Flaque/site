@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+html {
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.in-your-face {
+  width: 80%;
+  height: 60%;
+  padding: 20px;
+  background: black;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .in-your-face .header {
+    margin: auto;
+    width: 60%;
+    height: 30%; }
+    .in-your-face .header h1, .in-your-face .header h2, .in-your-face .header h3, .in-your-face .header h4, .in-your-face .header h5, .in-your-face .header h6 {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      text-align: center;
+      color: white;
+      font-family: 'Lato', sans-serif; }
+    .in-your-face .header h1 {
+      font-weight: normal; }
+    .in-your-face .header h2 {
+      font-weight: 300; }
+  .in-your-face .menu {
+    background: red;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 60%; }
+    .in-your-face .menu i {
+      font-size: 46px;
+      color: white; }
