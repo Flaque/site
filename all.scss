@@ -44,8 +44,6 @@ html {
     height: 60%;
     padding: $padding;
 
-    background: black; //DEBUG
-
     margin: auto;
     @include vertical-align();
 
@@ -74,16 +72,19 @@ html {
     }
 
     .menu {
-        background: red; //DEBUG
         margin: auto;
         margin-top: $padding;
 
         width: 80%;
-        height: 60%;
+        height: 10%;
+        display:flex;
+        justify-content: space-between;
 
         i {
+            margin:auto;
             font-size: 46px;
             color: white;
+            text-shadow: 1px 1px #333333;
         }
     }
 }
